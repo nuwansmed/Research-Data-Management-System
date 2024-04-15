@@ -1,0 +1,28 @@
+.ui.inverted.menu {
+    background-color: #003366 !important;
+}
+
+.ui.inverted.menu .item {
+    color: #FFFFFF !important;
+}
+
+.ui.inverted.menu .item.active {
+    background-color: #001F3F !important;
+}
+
+/* Add this class to ensure the navbar has a background and does not overlap content */
+.navbar {
+    position: fixed; /* Fixed at the top of the page */
+    top: 0;
+    left: 0;
+    right: 0; /* Stretch across the top */
+    z-index: 1000; /* High z-index to ensure it's above other content */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); /* Optional: Adds shadow for depth */
+    background: #1B1C1D; /* Match the inverted color of Semantic UI's Menu */
+  }
+  
+  /* Add padding to the body or main content wrapper to prevent overlap */
+  .body-content {
+    padding-top: 50px; /* Adjust this value based on the actual height of your NavBar */
+  }
+  

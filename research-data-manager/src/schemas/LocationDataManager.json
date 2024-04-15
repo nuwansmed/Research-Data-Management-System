@@ -1,0 +1,61 @@
+{
+    "type": "object",
+    "properties": {
+        "growerName": {
+            "title": "Grower Name",
+            "type": "string"
+        },
+        "growerContact": {
+            "title": "Grower Contact",
+            "type": "number"
+        },
+        "growerAge": {
+            "title": "Grower Age",
+            "type": "number"
+        },
+        "growerWifeAge": {
+            "title": "Grower Wife Age",
+            "type": "number"
+        },
+        "newInput1": {
+            "enum": [
+              "2",
+              "3"
+            ],
+            "title": "New Input 1",
+            "type": "string",
+            "enumNames": [
+              "two",
+              "three"
+            ]
+          },
+          "newInput2": {
+            "title": "New Input 2",
+             "type": "boolean"
+           },
+        "soilPhotos": {
+            "type": "array",
+            "title": "Upload soil photos",
+            "items": {
+                "type": "string",
+                "format": "data-url"
+            }
+        },
+        "cultivationPhotos": {
+            "type": "array",
+            "title": "Upload cultivation photos",
+            "items": {
+                "type": "string",
+                "format": "data-url"
+            }
+        },
+        "gardenPhotos": {
+            "type": "array",
+            "title": "Upload garden photos",
+            "items": {
+                "type": "string",
+                "format": "data-url"
+            }
+        }
+    }
+}
