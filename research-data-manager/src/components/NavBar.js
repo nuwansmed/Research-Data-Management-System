@@ -6,14 +6,14 @@ import '../styles/NavBar.css';
 
 const NavBar = () => {
     const location = useLocation();
-    const activePage = location.pathname.substring(1); // remove the leading '/'
+    const activePage = location.pathname.substring(1); 
 
     // Create a mapping from pathnames to display names
     const pageNames = {
         '': ' ',
         'location-data-manager': 'Location Data Manager',
         'microscopy-data-manager': 'Microscopy Manager',
-        // Add other mappings here
+        // other mappings here
     };
 
     // Get the display name for the current pathname
@@ -51,7 +51,7 @@ const NavBar = () => {
                         <Dropdown.Item as={Link} to="/help">
                             <Icon name="help circle" /> Help
                         </Dropdown.Item>
-                        {/* Add more dropdown items here */}
+                        {/* more dropdown items here */}
                     </Dropdown.Menu>
                 </Dropdown>
             </Menu.Menu>

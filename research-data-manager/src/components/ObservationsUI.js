@@ -26,17 +26,17 @@ const ObservationsUI = () => {
 
 
     useEffect(() => {
-        // Function to fetch schema data from server
+        //fetch schema data from server
         const fetchSchemaData = async () => {
             try {
-                // Adjust the endpoint as necessary
+                
                 const response = await fetch('/api/microscopy/load-schema');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
                 const data = await response.json();
 
-                // Process and set the data
+                
                 const loadedTypes = data.map(item => item.type);
                 const loadedObservations = {};
                 const loadedParameters = {};
@@ -53,7 +53,7 @@ const ObservationsUI = () => {
                                     loadedImages[name] = paramItem.images.map(imageItem => ({
                                         src: imageItem.src,
                                         description: imageItem.description,
-                                        file: imageItem.file // This may need adjustment based on how you handle files
+                                        file: imageItem.file 
                                     }));
                                 }
                                 return { name, description };

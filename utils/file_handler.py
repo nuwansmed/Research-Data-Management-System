@@ -26,6 +26,3 @@ def save_uploaded_files(files, location_id, visit_date):
                 print(f"Error saving file {filename}: {e}")
     return saved_paths
 
-# Optional: Function to validate allowed file types
-# def allowed_file(filename):
-#     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS

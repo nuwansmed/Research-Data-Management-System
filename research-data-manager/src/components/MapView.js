@@ -22,7 +22,7 @@ const SetViewToFitAll = ({ locations }) => {
         L.marker([loc.latitude, loc.longitude])
       ));
       map.fitBounds(group.getBounds(), {
-        padding: [50, 50] // Optional: adjust map padding
+        padding: [50, 50] // adjust map padding
       });
     }
   }, [locations, map]);
@@ -31,8 +31,7 @@ const SetViewToFitAll = ({ locations }) => {
 };
 
 const MapView = ({ locations }) => {
-  // Adjust the height and width of the map to fit under the NavBar
-  // Assuming NavBar is 50px high -- adjust accordingly
+
   const mapStyle = {
     height: 'calc(80vh - 50px)',
     width: '100%'

@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "properties": {
+        
+        
+        "temperature": {
+            "title": "Temperature (°C)",
+            "type": "number"
+        },
+        "humidity": {
+            "title": "Humidity (%)",
+            "type": "number"
+        },
+        "rainfall": {
+            "title": "Rainfall (mm)",
+            "type": "number"
+        },
+        "pestIncidence": {
+            "title": "Pest Incidence",
+            "type": "string"
+        },
+        "diseaseIncidence": {
+            "title": "Disease Incidence",
+            "type": "string"
+        },
+        "soilMoisture": {
+            "title": "Soil Moisture (%)",
+            "type": "number"
+        },
+        "cropHealthPhotos": {
+            "type": "array",
+            "title": "Upload Crop Health Photos",
+            "items": {
+                "type": "string",
+                "format": "data-url"
+            }
+        },
+        "fieldNotes": {
+            "title": "Field Notes",
+            "type": "string"
+        }
+    }
+}

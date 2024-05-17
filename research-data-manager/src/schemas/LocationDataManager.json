@@ -9,33 +9,35 @@
             "title": "Grower Contact",
             "type": "number"
         },
-        "growerAge": {
-            "title": "Grower Age",
+        "farmSize": {
+            "title": "Farm Size (acres)",
             "type": "number"
         },
-        "growerWifeAge": {
-            "title": "Grower Wife Age",
-            "type": "number"
+        "cropType": {
+            "title": "Crop Type",
+            "type": "string"
         },
-        "newInput1": {
+        "irrigationType": {
             "enum": [
-              "2",
-              "3"
+                "Drip",
+                "Sprinkler",
+                "Flood"
             ],
-            "title": "New Input 1",
+            "title": "Irrigation Type",
             "type": "string",
             "enumNames": [
-              "two",
-              "three"
+                "Drip Irrigation",
+                "Sprinkler Irrigation",
+                "Flood Irrigation"
             ]
-          },
-          "newInput2": {
-            "title": "New Input 2",
-             "type": "boolean"
-           },
+        },
+        "organicFarming": {
+            "title": "Organic Farming",
+            "type": "boolean"
+        },
         "soilPhotos": {
             "type": "array",
-            "title": "Upload soil photos",
+            "title": "Upload Soil Photos",
             "items": {
                 "type": "string",
                 "format": "data-url"
@@ -43,15 +45,15 @@
         },
         "cultivationPhotos": {
             "type": "array",
-            "title": "Upload cultivation photos",
+            "title": "Upload Cultivation Photos",
             "items": {
                 "type": "string",
                 "format": "data-url"
             }
         },
-        "gardenPhotos": {
+        "harvestPhotos": {
             "type": "array",
-            "title": "Upload garden photos",
+            "title": "Upload Harvest Photos",
             "items": {
                 "type": "string",
                 "format": "data-url"
