@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /.vscode
 /venv
+=======
+venv/
+instance/
+assets/images/
+.vscode/
+__pycache__/
+>>>>>>> c5c2e117e3cf4bb046c3761a8bf6ea4244b407df

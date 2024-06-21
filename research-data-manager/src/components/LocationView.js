@@ -46,7 +46,7 @@ const LocationView = () => {
           };
         
           if (isImageField(key)) {
-            colDef.cellRenderer = 'imageCellRenderer'; // Use the name you registered in components
+            colDef.cellRenderer = 'imageCellRenderer'; // Use the name registered in components
           }
         
           return colDef;

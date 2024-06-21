@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import LocationDataManager from './components/LocationDataManager';
+import LocationDataManager from './components/LocationDataManagerr';
 import MicroscopyManager from './components/MicroscopyManager';
 import LocationView from './components/LocationView';
 import MarkerDataManager from './components/MarkerDataManager';

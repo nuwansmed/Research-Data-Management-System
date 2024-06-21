@@ -57,7 +57,7 @@ const LocationDataManager = () => {
                 setDynamicSchema(schemaResponse.data);
             } catch (error) {
                 console.error('Error fetching dynamic schema:', error);
-                // Handle error appropriately
+                
             } finally {
                 setIsLoadingSchema(false);
             }
@@ -98,13 +98,13 @@ const LocationDataManager = () => {
         getNextLocationIndex().then(index => {
             if (index !== null) {
                 setNextLocationIndex(index);
-                // Now that we have the index, we can format the ID immediately
+                
                 if (!isPreviousLocation) {
                     setFormattedLocationID(formatLocationId(newLocationID, index));
                 }
             }
         });
-    }, [isPreviousLocation]); // We added this dependency so it will re-run when isPreviousLocation changes
+    }, [isPreviousLocation]); // added this dependency so it will re-run when isPreviousLocation changes
 
 
 
@@ -234,7 +234,7 @@ const LocationDataManager = () => {
 
 
 
-    // We've updated formatLocationId to take the index as an argument
+    // updated formatLocationId to take the index as an argument
     const formatLocationId = (input, index) => {
         const formattedInput = input.toUpperCase().replace(/\s+/g, ' ').trim().replace(/\s/g, '-');
         return `L${index}-${formattedInput}`;

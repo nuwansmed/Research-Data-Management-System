@@ -6,6 +6,8 @@ from datetime import datetime
 import json
 import os
 
+from services.visit_service import get_combined_visit_data
+
 location_blueprint = Blueprint('location_blueprint', __name__)
 
 def add_visit(location_id, visit_date, dynamic_data, visit_files):
@@ -16,7 +18,7 @@ def add_visit(location_id, visit_date, dynamic_data, visit_files):
     # Handle file uploads for visit
     saved_visit_files = save_uploaded_visit_files(visit_files, location_id, visit_date, new_visit.id)
     # Update dynamic_data with saved file paths for visit
-    # ...
+    
 
     return new_visit
 
